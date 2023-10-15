@@ -21,7 +21,7 @@ h1{
 }
 .container-receitas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px; 
 }
@@ -53,6 +53,16 @@ h1{
 /* Estilização da Navbar */
 #navbar-section {
     background-color: #eebae3;
+}
+
+.navbar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link i {
+    margin-right: 5px; /* Ajuste conforme necessário */
 }
 
 #menu-h {
@@ -218,4 +228,6 @@ footer {
 
 .footer-links li a:hover {
     opacity: 0.7;
+}
+@media (max-width: 768px) {
 }
