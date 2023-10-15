@@ -20,10 +20,10 @@ h1{
     
 }
 .container-receitas {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual */
     gap: 20px;
-    padding: 20px; /* Adiciona espaço ao redor do contêiner */
+    padding: 20px; 
 }
 
 .receita {
