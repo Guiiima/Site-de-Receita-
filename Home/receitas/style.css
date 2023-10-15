@@ -22,7 +22,15 @@ h1{
 #navbar-section {
     background-color: #ece4e4;
 }
+.navbar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.navbar-link i {
+    margin-right: 5px; /* Ajuste conforme necessário */
+}
 #menu-h {
     overflow: hidden;
     display: flex;
