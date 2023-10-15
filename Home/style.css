@@ -1,0 +1,174 @@
+body,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #f0eeee;
+}
+
+h1{
+    color: 	#c72b5a;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.container-receitas {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os itens */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.receita {
+    flex-basis: calc(33.33% - 20px); /* Define o tamanho base de cada item como 1/3 do container menos a metade do espaço do 'gap' */
+    text-align: center; /* Centraliza o texto da descrição */
+}
+
+.receita img {
+    width: 100%;  /* Largura total do item */
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px; /* Espaço entre a imagem e a descrição */
+}
+
+.descricao {
+    font-weight: bold;
+}
+
+/* Estilização da Navbar */
+#navbar-section {
+    background-color: #ece4e4;
+}
+
+#menu-h {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+#menu-h ul {
+    display: flex;
+    align-items: center;
+}
+
+#menu-h ul li {
+    margin: 0 15px;
+}
+
+#menu-h ul li a {
+    color: #000000;
+    padding: 20px 25px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#menu-h ul li a:hover {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h ul li a:active {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h .entrar {
+    padding: 20px 25px;
+    color: #000000;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#menu-h .entrar:hover {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h .entrar:active {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h a i {
+    margin-right: 5px;
+}
+
+/* Estilização do Carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+}
+
+.carousel-slides {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    animation: carousel-animation 15s infinite;
+    width: 300%;
+}
+
+.carousel-slides .slide {
+    flex: 1;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls .prev,
+.carousel-controls .next {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.carousel-controls .prev:hover,
+.carousel-controls .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+@keyframes carousel-animation {
+
+    0%,
+    33% {
+        transform: translateX(0);
+    }
+
+    34%,
+    66% {
+        transform: translateX(-33.33%);
+    }
+
+    67%,
+    100% {
+        transform: translateX(-66.66%);
+    }
+}
