@@ -8,7 +8,8 @@
     <style>
         .container {
             background-color: #fff;
-            width: 50%;
+            width: 90%; 
+            max-width: 400px;
             margin: auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -29,22 +30,20 @@
     
         .form-group {
             display: flex;
-            align-items: center;
+            flex-direction: column; 
             margin-bottom: 15px;
             font-weight: bold;
         }
-    
+
         .form-group input {
-            margin-right: 50px;
+            margin: 5px 0;
         }
     
         label {
-            flex: 1;
-            margin-right: 20px;
+            margin-bottom: 5px;
         }
     
         input {
-            flex: 2;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -62,7 +61,7 @@
     
         .buttons {
             display: flex;
-            justify-content: flex-end;
+            flex-direction: column; 
             gap: 10px;
         }
     
@@ -75,6 +74,26 @@
         .buttons a:hover {
             background-color:#d83f3f;
             color: #EFEFEF;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 50%;
+            }
+    
+            .form-group {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .form-group input {
+                margin: 0 10px 0 0;
+            }
+    
+            .buttons {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
         }
     </style>
 </head>
@@ -94,7 +113,7 @@
                         <input type="password" id="Senha" required>
                     </div>
                     <div class="buttons">
-                        <a href="./index.html">Entrar</a> <!-- Aqui deveria receber uma função em JS para entrar, entretanto somente redireciona para o index -->
+                        <a href="./index.html">Entrar</a>
                         <a href="./cadastro.html">Cadastrar</a>
                         <a href="./index.html">Home</a>
                     </div>
