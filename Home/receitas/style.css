@@ -9,7 +9,7 @@ a {
     font-family: 'Arial', sans-serif;
 }
 body{
-    background-color: #f0eeee;
+    background-color: #daceb76f;
 }
 
 h1{
@@ -20,7 +20,7 @@ h1{
     
 }
 #navbar-section {
-    background-color: #ece4e4;
+    background-color: #F3E1CF;
 }
 .navbar-link {
     display: inline-flex;
